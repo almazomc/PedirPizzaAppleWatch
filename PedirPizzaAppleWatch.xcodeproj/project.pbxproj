@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A593BA71DE7C71B002560E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A593BA61DE7C71B002560E6 /* AppDelegate.swift */; };
+		3A593BA91DE7C71B002560E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A593BA81DE7C71B002560E6 /* ViewController.swift */; };
+		3A593BAC1DE7C71B002560E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A593BAA1DE7C71B002560E6 /* Main.storyboard */; };
+		3A593BAE1DE7C71B002560E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A593BAD1DE7C71B002560E6 /* Assets.xcassets */; };
+		3A593BB11DE7C71B002560E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A593BAF1DE7C71B002560E6 /* LaunchScreen.storyboard */; };
+		3A593BB61DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A593BB51DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App.app */; };
+		3A593BBC1DE7C71B002560E6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A593BBA1DE7C71B002560E6 /* Interface.storyboard */; };
+		3A593BBE1DE7C71B002560E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A593BBD1DE7C71B002560E6 /* Assets.xcassets */; };
+		3A593BC51DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A593BC41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A593BCE1DE7C71B002560E6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A593BCD1DE7C71B002560E6 /* ExtensionDelegate.swift */; };
+		3A593BD01DE7C71B002560E6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A593BCF1DE7C71B002560E6 /* NotificationController.swift */; };
+		3A593BD21DE7C71B002560E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A593BD11DE7C71B002560E6 /* Assets.xcassets */; };
+		3AA48A231DEB918F003CED07 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A593BCB1DE7C71B002560E6 /* InterfaceController.swift */; };
+		3AA48A241DEB91B5003CED07 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A201DEB9093003CED07 /* Pizza.swift */; };
+		3AA48A2D1DEB9525003CED07 /* TipoQuesoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A2C1DEB9525003CED07 /* TipoQuesoInterfaceController.swift */; };
+		3AA48A2F1DEB9A23003CED07 /* TipoMasaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A2E1DEB9A23003CED07 /* TipoMasaInterfaceController.swift */; };
+		3AA48A311DEBB274003CED07 /* Celda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A301DEBB274003CED07 /* Celda.swift */; };
+		3AA48A331DEBB322003CED07 /* ConfirmacionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A321DEBB322003CED07 /* ConfirmacionInterfaceController.swift */; };
+		3AA48A351DEBB374003CED07 /* IngredientesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A341DEBB374003CED07 /* IngredientesInterfaceController.swift */; };
+		3AA48A371DEBBA81003CED07 /* IngredienteCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48A361DEBBA81003CED07 /* IngredienteCelda.swift */; };
+		3AB5D3CF1DEBE8CA006C44A2 /* IniciarInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5D3CC1DEBE799006C44A2 /* IniciarInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A593BB71DE7C71B002560E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A593B9B1DE7C71B002560E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A593BB41DE7C71B002560E6;
+			remoteInfo = "PedirPizzaAppleWatch WatchKit App";
+		};
+		3A593BC61DE7C71B002560E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A593B9B1DE7C71B002560E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A593BC31DE7C71B002560E6;
+			remoteInfo = "PedirPizzaAppleWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A593BD91DE7C71B002560E6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A593BC51DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A593BDD1DE7C71B002560E6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3A593BB61DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A593BA31DE7C71B002560E6 /* PedirPizzaAppleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedirPizzaAppleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A593BA61DE7C71B002560E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A593BA81DE7C71B002560E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A593BAB1DE7C71B002560E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A593BAD1DE7C71B002560E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A593BB01DE7C71B002560E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A593BB21DE7C71B002560E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A593BB51DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PedirPizzaAppleWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A593BBB1DE7C71B002560E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3A593BBD1DE7C71B002560E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A593BBF1DE7C71B002560E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A593BC41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PedirPizzaAppleWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A593BCA1DE7C71B002560E6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3A593BCB1DE7C71B002560E6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3A593BCD1DE7C71B002560E6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3A593BCF1DE7C71B002560E6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3A593BD11DE7C71B002560E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A593BD31DE7C71B002560E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA48A201DEB9093003CED07 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pizza.swift; path = ../PedirPizzaAppleWatch/Pizza.swift; sourceTree = "<group>"; };
+		3AA48A2C1DEB9525003CED07 /* TipoQuesoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoQuesoInterfaceController.swift; sourceTree = "<group>"; };
+		3AA48A2E1DEB9A23003CED07 /* TipoMasaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoMasaInterfaceController.swift; sourceTree = "<group>"; };
+		3AA48A301DEBB274003CED07 /* Celda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celda.swift; sourceTree = "<group>"; };
+		3AA48A321DEBB322003CED07 /* ConfirmacionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionInterfaceController.swift; sourceTree = "<group>"; };
+		3AA48A341DEBB374003CED07 /* IngredientesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesInterfaceController.swift; sourceTree = "<group>"; };
+		3AA48A361DEBBA81003CED07 /* IngredienteCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredienteCelda.swift; sourceTree = "<group>"; };
+		3AB5D3CC1DEBE799006C44A2 /* IniciarInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IniciarInterfaceController.swift; path = "../PedirPizzaAppleWatch WatchKit App/IniciarInterfaceController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A593BA01DE7C71B002560E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A593BC11DE7C71B002560E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A593B9A1DE7C71B002560E6 = {
+			isa = PBXGroup;
+			children = (
+				3A593BA51DE7C71B002560E6 /* PedirPizzaAppleWatch */,
+				3A593BB91DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App */,
+				3A593BC81DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension */,
+				3A593BA41DE7C71B002560E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A593BA41DE7C71B002560E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A593BA31DE7C71B002560E6 /* PedirPizzaAppleWatch.app */,
+				3A593BB51DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App.app */,
+				3A593BC41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A593BA51DE7C71B002560E6 /* PedirPizzaAppleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3A593BA61DE7C71B002560E6 /* AppDelegate.swift */,
+				3A593BA81DE7C71B002560E6 /* ViewController.swift */,
+				3A593BAA1DE7C71B002560E6 /* Main.storyboard */,
+				3A593BAD1DE7C71B002560E6 /* Assets.xcassets */,
+				3A593BAF1DE7C71B002560E6 /* LaunchScreen.storyboard */,
+				3A593BB21DE7C71B002560E6 /* Info.plist */,
+			);
+			path = PedirPizzaAppleWatch;
+			sourceTree = "<group>";
+		};
+		3A593BB91DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3A593BBA1DE7C71B002560E6 /* Interface.storyboard */,
+				3A593BBD1DE7C71B002560E6 /* Assets.xcassets */,
+				3A593BBF1DE7C71B002560E6 /* Info.plist */,
+			);
+			path = "PedirPizzaAppleWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		3A593BC81DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5D3CC1DEBE799006C44A2 /* IniciarInterfaceController.swift */,
+				3AA48A201DEB9093003CED07 /* Pizza.swift */,
+				3A593BCB1DE7C71B002560E6 /* InterfaceController.swift */,
+				3A593BCD1DE7C71B002560E6 /* ExtensionDelegate.swift */,
+				3A593BCF1DE7C71B002560E6 /* NotificationController.swift */,
+				3A593BD11DE7C71B002560E6 /* Assets.xcassets */,
+				3A593BD31DE7C71B002560E6 /* Info.plist */,
+				3A593BC91DE7C71B002560E6 /* Supporting Files */,
+				3AA48A2C1DEB9525003CED07 /* TipoQuesoInterfaceController.swift */,
+				3AA48A2E1DEB9A23003CED07 /* TipoMasaInterfaceController.swift */,
+				3AA48A301DEBB274003CED07 /* Celda.swift */,
+				3AA48A321DEBB322003CED07 /* ConfirmacionInterfaceController.swift */,
+				3AA48A341DEBB374003CED07 /* IngredientesInterfaceController.swift */,
+				3AA48A361DEBBA81003CED07 /* IngredienteCelda.swift */,
+			);
+			path = "PedirPizzaAppleWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3A593BC91DE7C71B002560E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A593BCA1DE7C71B002560E6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A593BA21DE7C71B002560E6 /* PedirPizzaAppleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A593BDE1DE7C71B002560E6 /* Build configuration list for PBXNativeTarget "PedirPizzaAppleWatch" */;
+			buildPhases = (
+				3A593B9F1DE7C71B002560E6 /* Sources */,
+				3A593BA01DE7C71B002560E6 /* Frameworks */,
+				3A593BA11DE7C71B002560E6 /* Resources */,
+				3A593BDD1DE7C71B002560E6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A593BB81DE7C71B002560E6 /* PBXTargetDependency */,
+			);
+			name = PedirPizzaAppleWatch;
+			productName = PedirPizzaAppleWatch;
+			productReference = 3A593BA31DE7C71B002560E6 /* PedirPizzaAppleWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A593BB41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A593BDA1DE7C71B002560E6 /* Build configuration list for PBXNativeTarget "PedirPizzaAppleWatch WatchKit App" */;
+			buildPhases = (
+				3A593BB31DE7C71B002560E6 /* Resources */,
+				3A593BD91DE7C71B002560E6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A593BC71DE7C71B002560E6 /* PBXTargetDependency */,
+			);
+			name = "PedirPizzaAppleWatch WatchKit App";
+			productName = "PedirPizzaAppleWatch WatchKit App";
+			productReference = 3A593BB51DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3A593BC31DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A593BD61DE7C71B002560E6 /* Build configuration list for PBXNativeTarget "PedirPizzaAppleWatch WatchKit Extension" */;
+			buildPhases = (
+				3A593BC01DE7C71B002560E6 /* Sources */,
+				3A593BC11DE7C71B002560E6 /* Frameworks */,
+				3A593BC21DE7C71B002560E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PedirPizzaAppleWatch WatchKit Extension";
+			productName = "PedirPizzaAppleWatch WatchKit Extension";
+			productReference = 3A593BC41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A593B9B1DE7C71B002560E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Celia;
+				TargetAttributes = {
+					3A593BA21DE7C71B002560E6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NJJB8Z5Q5F;
+						ProvisioningStyle = Automatic;
+					};
+					3A593BB41DE7C71B002560E6 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					3A593BC31DE7C71B002560E6 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3A593B9E1DE7C71B002560E6 /* Build configuration list for PBXProject "PedirPizzaAppleWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A593B9A1DE7C71B002560E6;
+			productRefGroup = 3A593BA41DE7C71B002560E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A593BA21DE7C71B002560E6 /* PedirPizzaAppleWatch */,
+				3A593BB41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App */,
+				3A593BC31DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A593BA11DE7C71B002560E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A593BB11DE7C71B002560E6 /* LaunchScreen.storyboard in Resources */,
+				3A593BAE1DE7C71B002560E6 /* Assets.xcassets in Resources */,
+				3A593BAC1DE7C71B002560E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A593BB31DE7C71B002560E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A593BBE1DE7C71B002560E6 /* Assets.xcassets in Resources */,
+				3A593BBC1DE7C71B002560E6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A593BC21DE7C71B002560E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A593BD21DE7C71B002560E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A593B9F1DE7C71B002560E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A593BA91DE7C71B002560E6 /* ViewController.swift in Sources */,
+				3A593BA71DE7C71B002560E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A593BC01DE7C71B002560E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA48A241DEB91B5003CED07 /* Pizza.swift in Sources */,
+				3AA48A231DEB918F003CED07 /* InterfaceController.swift in Sources */,
+				3A593BD01DE7C71B002560E6 /* NotificationController.swift in Sources */,
+				3AA48A311DEBB274003CED07 /* Celda.swift in Sources */,
+				3AA48A2F1DEB9A23003CED07 /* TipoMasaInterfaceController.swift in Sources */,
+				3AB5D3CF1DEBE8CA006C44A2 /* IniciarInterfaceController.swift in Sources */,
+				3AA48A331DEBB322003CED07 /* ConfirmacionInterfaceController.swift in Sources */,
+				3AA48A371DEBBA81003CED07 /* IngredienteCelda.swift in Sources */,
+				3AA48A351DEBB374003CED07 /* IngredientesInterfaceController.swift in Sources */,
+				3AA48A2D1DEB9525003CED07 /* TipoQuesoInterfaceController.swift in Sources */,
+				3A593BCE1DE7C71B002560E6 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A593BB81DE7C71B002560E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A593BB41DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit App */;
+			targetProxy = 3A593BB71DE7C71B002560E6 /* PBXContainerItemProxy */;
+		};
+		3A593BC71DE7C71B002560E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A593BC31DE7C71B002560E6 /* PedirPizzaAppleWatch WatchKit Extension */;
+			targetProxy = 3A593BC61DE7C71B002560E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A593BAA1DE7C71B002560E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A593BAB1DE7C71B002560E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A593BAF1DE7C71B002560E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A593BB01DE7C71B002560E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A593BBA1DE7C71B002560E6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A593BBB1DE7C71B002560E6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A593BD41DE7C71B002560E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A593BD51DE7C71B002560E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A593BD71DE7C71B002560E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "PedirPizzaAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celia.PedirPizzaAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		3A593BD81DE7C71B002560E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "PedirPizzaAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celia.PedirPizzaAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		3A593BDB1DE7C71B002560E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PedirPizzaAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PedirPizzaAppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celia.PedirPizzaAppleWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		3A593BDC1DE7C71B002560E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PedirPizzaAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PedirPizzaAppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celia.PedirPizzaAppleWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		3A593BDF1DE7C71B002560E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJJB8Z5Q5F;
+				INFOPLIST_FILE = PedirPizzaAppleWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celia.PedirPizzaAppleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3A593BE01DE7C71B002560E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJJB8Z5Q5F;
+				INFOPLIST_FILE = PedirPizzaAppleWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celia.PedirPizzaAppleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A593B9E1DE7C71B002560E6 /* Build configuration list for PBXProject "PedirPizzaAppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A593BD41DE7C71B002560E6 /* Debug */,
+				3A593BD51DE7C71B002560E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A593BD61DE7C71B002560E6 /* Build configuration list for PBXNativeTarget "PedirPizzaAppleWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A593BD71DE7C71B002560E6 /* Debug */,
+				3A593BD81DE7C71B002560E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A593BDA1DE7C71B002560E6 /* Build configuration list for PBXNativeTarget "PedirPizzaAppleWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A593BDB1DE7C71B002560E6 /* Debug */,
+				3A593BDC1DE7C71B002560E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A593BDE1DE7C71B002560E6 /* Build configuration list for PBXNativeTarget "PedirPizzaAppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A593BDF1DE7C71B002560E6 /* Debug */,
+				3A593BE01DE7C71B002560E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A593B9B1DE7C71B002560E6 /* Project object */;
+}

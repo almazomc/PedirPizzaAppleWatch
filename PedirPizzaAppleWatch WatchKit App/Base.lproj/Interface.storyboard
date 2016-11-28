@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F71-rS-Q2v">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Iniciar Interface Controller-->
+        <scene sceneID="qKO-rR-G7T">
+            <objects>
+                <controller id="F71-rS-Q2v" customClass="IniciarInterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Iniciar pedido" id="WGs-x5-CWS">
+                            <connections>
+                                <action selector="iniciarPedido" destination="F71-rS-Q2v" id="6Ev-ae-y07"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="15" y="351"/>
+        </scene>
+        <!--vistaTamanoPizza-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="vistaTamanoPizza" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <picker height="100" alignment="left" focusStyle="sequence" id="AmW-kE-mTM">
+                            <connections>
+                                <action selector="changeValue:" destination="AgC-eL-Hgc" id="eyj-4N-mf6"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguente" id="FUB-n1-VtU">
+                            <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="siguienteAction" destination="AgC-eL-Hgc" id="YsG-9A-4cc"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="AmW-kE-mTM" id="Y2G-NU-fP0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--vistaTipoDeMasa-->
+        <scene sceneID="54S-GF-khc">
+            <objects>
+                <controller identifier="vistaTipoDeMasa" id="gam-zI-dPH" customClass="TipoMasaInterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <picker height="100" alignment="left" focusStyle="sequence" id="8rs-ja-FfB">
+                            <connections>
+                                <action selector="changeValue:" destination="gam-zI-dPH" id="qZV-4P-AAj"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="90G-gt-4g0">
+                            <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="siguienteAction" destination="gam-zI-dPH" id="772-ra-Obf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="masasPicker" destination="8rs-ja-FfB" id="dlv-NS-yNx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="430" y="345"/>
+        </scene>
+        <!--vistaTipoQueso-->
+        <scene sceneID="2ho-X5-umf">
+            <objects>
+                <controller identifier="vistaTipoQueso" id="MmA-8Z-3Ax" customClass="TipoQuesoInterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <picker height="100" alignment="left" focusStyle="sequence" id="Xwc-vA-Nbr">
+                            <connections>
+                                <action selector="changeValue:" destination="MmA-8Z-3Ax" id="3IJ-AD-NBu"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="Rc6-p5-ZJo">
+                            <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="siguienteAction" destination="MmA-8Z-3Ax" id="Rh0-60-sqm"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="quesosPicker" destination="Xwc-vA-Nbr" id="dEE-qV-pVG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="660" y="345"/>
+        </scene>
+        <!--vistaIngredientes-->
+        <scene sceneID="zyL-YL-heP">
+            <objects>
+                <controller identifier="vistaIngredientes" id="NLa-vY-wL0" customClass="IngredientesInterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="5bg-4L-vwt">
+                            <items>
+                                <tableRow identifier="ingredienteRow" id="36M-2W-M6k" customClass="IngredienteCelda" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="udG-Wx-SWd">
+                                        <items>
+                                            <switch width="1" alignment="left" value="YES" title="Switch" id="B0K-Jk-Yc1">
+                                                <connections>
+                                                    <action selector="switchAction:" destination="36M-2W-M6k" id="b2f-uG-aA8"/>
+                                                </connections>
+                                            </switch>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ingredienteSwitch" destination="B0K-Jk-Yc1" id="xdo-A8-Df4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Siguiente" id="Z7G-Oa-sbA">
+                            <connections>
+                                <action selector="siguienteAction" destination="NLa-vY-wL0" id="Ecc-ng-66W"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="5bg-4L-vwt" id="2x7-Bj-JWe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="867" y="345"/>
+        </scene>
+        <!--vistaConfirmacion-->
+        <scene sceneID="Cea-v1-tqI">
+            <objects>
+                <controller identifier="vistaConfirmacion" id="Czp-vX-ZC5" customClass="ConfirmacionInterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="YnO-Bz-7BT">
+                            <items>
+                                <tableRow identifier="mainRowType" id="YEU-2Z-dxi" customClass="Celda" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="1A2-jY-rdc">
+                                        <items>
+                                            <label height="1" alignment="left" verticalAlignment="center" text="Label" id="scQ-1Z-xYW"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblText" destination="scQ-1Z-xYW" id="F8C-zc-ITS"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Confirmar" id="SFu-WQ-z8a">
+                            <connections>
+                                <action selector="confirmarAction" destination="Czp-vX-ZC5" id="5vy-qt-kl0"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="YnO-Bz-7BT" id="bcL-bF-q9O"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1094" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PedirPizzaAppleWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
